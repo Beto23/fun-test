@@ -1,0 +1,56 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "now-build": "npm run build",
+    "build": "webpack",
+    "lint": "standard",
+    "dev": "webpack-dev-server --history-api-fallback",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "apollo-boost": "^0.4.4",
+    "graphql": "^14.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "intersection-observer": "^0.7.0",
+    "node-forge": "^0.9.1",
+    "react": "^16.8.6",
+    "react-apollo": "^3.0.1",
+    "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
+    "styled-components": "^4.3.2",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "keypair": "^1.0.1",
+    "standard": "^13.1.0",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
+  }
+}
